@@ -19,3 +19,6 @@ jobs:
 
       - name: Executar testes
         run: npm test
+
+      - name: Finalizado
+        run: echo "Workflow executado com sucesso!"
