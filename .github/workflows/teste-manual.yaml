@@ -17,6 +17,9 @@ jobs:
       - name: Instalar dependências
         run: npm install
 
+      - name: Corrigir permissão do Mocha
+        run: chmod +x ./node_modules/.bin/mocha
+
       - name: Executar testes
         run: npm test
 
